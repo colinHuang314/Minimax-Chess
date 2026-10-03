@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Console build of the engine. The source lives in the Unity project
+       (unity/Assets/Scripts/ChessBot) so both builds share one copy;
+       ChessBotRunner.cs is the Unity MonoBehaviour and is left out here. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <TieredPGO>true</TieredPGO>
+    <AssemblyName>ChessBot</AssemblyName>
+    <RootNamespace>ChessBot</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../unity/Assets/Scripts/ChessBot/*.cs"
+             Exclude="../unity/Assets/Scripts/ChessBot/ChessBotRunner.cs" />
+  </ItemGroup>
+
+</Project>

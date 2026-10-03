@@ -1,0 +1,19 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.apk
+*.unitypackage
+
+# Third-party Asset Store content: import "Chess Set" by Gentlemen Gaming instead
+Assets/Chess Set/
+Assets/Chess Set.meta
