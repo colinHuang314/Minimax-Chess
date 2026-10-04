@@ -3,6 +3,7 @@
 A chess engine written from scratch in C#, searching about 1.4 million positions per second and playing at roughly 2000 Elo (estimated against Stockfish), with a 3D Unity game built on top.
 
 ![Gameplay](docs/gameplay.gif)
+<img width="580" height="330" alt="Screenshot 2026-08-13 164133" src="https://github.com/user-attachments/assets/99f60292-6a2d-4b37-9e87-4909b8e8a1f4" />
 
 ## Engine (C#)
 - **Search:** iterative-deepening negamax with alpha-beta pruning, reaching depth 11 from the opening position in under 3 seconds
